@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container p-5">
+      <h1 class="text-center">Bài tập</h1>
+
+      <!-- *: Bài tập 1 -->
+      <div class="bt1">
+        <h2 class="mb-4">Bài tập 1</h2>
+        <div class="form-group">
+          <label for="">Nhập điểm chuẩn</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt1__duLieu"
+            id="bt1__duLieu--diemChuan"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+          <label for="">Nhập điểm môn thi 1</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt1__duLieu"
+            id="bt1__duLieu--diemThi1"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+          <label for="">Nhập điểm môn thi 2</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt1__duLieu"
+            id="bt1__duLieu--diemThi2"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+          <label for="">Nhập điểm môn thi 3</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt1__duLieu"
+            id="bt1__duLieu--diemThi3"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+          <label for="">Nhập khu vực dự thi</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt1__duLieu"
+            id="bt1__duLieu--khuVuc"
+            aria-describedby="helpId"
+            placeholder="Nhập X nếu không thuộc khu vực ưu tiên"
+          />
+          <label for="">Nhập diện ưu tiên đối tượng dự thi</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt1__duLieu"
+            id="bt1__duLieu--doiTuong"
+            aria-describedby="helpId"
+            placeholder="Nhập 0 nếu không thuộc đối tượng ưu tiên"
+          />
+        </div>
+
+        <button class="btn btn-success" id="btn-bt1">Kết Quả</button>
+        <div class="mt-3">
+          <p id="bt1__ketQua" class="mb-0"></p>
+          <p id="bt1__tongDiem"></p>
+        </div>
+      </div>
+      <!-- *: End -->
+
+      <!-- *: Bài tập 2 -->
+      <div class="bt2 mt-5">
+        <h3 class="mb-3">Bài tập 2</h3>
+        <div class="form-group">
+          <label for="">Nhập tổng số điện tiêu thụ (Kw)</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt2__duLieu"
+            id="bt2__duLieu--tongDien"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+        </div>
+
+        <button class="btn btn-success" id="btn-bt2">Tính tiền</button>
+        <div class="mt-3">
+          <p id="bt2__ketQua"></p>
+        </div>
+      </div>
+      <!-- *: End -->
+
+      <!-- *: Bài tập 3 -->
+      <div class="bt3 mt-5">
+        <h3 class="mb-3">Bài tập 3</h3>
+        <div class="form-group">
+          <label for="">Họ tên</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt3__duLieu"
+            id="bt3__duLieu--hoTen"
+            aria-describedby="helpId"
+            placeholder="vd: Nguyễn Văn A"
+          />
+          <label for="">Tổng thu nhập năm (đ)</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt3__duLieu"
+            id="bt1__duLieu--thuNhap"
+            aria-describedby="helpId"
+            placeholder="vd: 11,000,000"
+          />
+          <label for="">Số người phụ thuộc</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt3__duLieu"
+            id="bt3__duLieu--soPhuThuoc"
+            aria-describedby="helpId"
+            placeholder="vd: 2"
+          />
+        </div>
+
+        <button class="btn btn-success" id="btn-bt3">Tính thuế</button>
+
+        <div class="mt-3">
+          <p id="bt3__ketQua--hoTen"></p>
+          <p id="bt3__ketQua--tienThue"></p>
+        </div>
+      </div>
+      <!-- *: End -->
+
+      <!-- *: Bài tập 4 -->
+      <div class="bt4 mt-5">
+        <h3 class="mb-3">Bài tập 4</h3>
+        <div class="form-group">
+          <label for="">Mã khách hàng</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt4__duLieu"
+            id="bt4__duLieu--maKH"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+          <label for="">Nhóm khách hàng</label>
+          <div class="wrapper" id="nhomKH">
+            <input
+              type="radio"
+              name="select"
+              id="option-1"
+              value="Personal"
+              checked
+            />
+            <input type="radio" name="select" id="option-2" value="Business" />
+            <label for="option-1" class="option option-1">
+              <div class="dot"></div>
+              <span>Nhà dân</span>
+            </label>
+            <label for="option-2" class="option option-2">
+              <div class="dot"></div>
+              <span>Doanh nghiệp</span>
+            </label>
+          </div>
+
+          <label for="">Số kênh cao cấp</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt4__duLieu"
+            id="bt4__duLieu--soKenh"
+            aria-describedby="helpId"
+            placeholder=""
+          />
+          <label for="">Số kết nối</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bt4__duLieu"
+            id="bt4__duLieu--soKetNoi"
+            aria-describedby="helpId"
+            placeholder=""
+            disabled
+          />
+        </div>
+
+        <button class="btn btn-success" id="btn-bt4">Tính tiền</button>
+        <div class="mt-3" id="bt4__ketQua"></div>
+      </div>
+      <!-- *: End -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/bt1.js"></script>
+    <script src="./js/bt2.js"></script>
+    <script src="./js/bt3.js"></script>
+    <script src="./js/bt4.js"></script>
+  </body>
+</html>
